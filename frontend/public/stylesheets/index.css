@@ -1,0 +1,310 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+body {
+  font: 14px Futura, Trebuchet MS , Arial , sans-serif !important;
+  background-color: #f3e8c7 !important;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+#root {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+a {
+  color: white;
+}
+.h1 {
+    font-size: 4rem !important;
+    color: white !important;
+}
+
+/*GlobalNavBar*/
+.navbar.bg-light.navbar-light  {
+	background-color: #484848 !important;
+	top: 0;
+	position: sticky;
+	z-index: 5;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: white !important;
+}
+.navlogin {
+	text-align: right;
+}
+.logo {
+	border-radius: 50%;
+}
+.restaurantfinder {
+	font-size: 4vw;
+}
+.navbarlogin {
+	font-size: 1vw;
+	text-align: : right;
+}
+.navbar-toggler {
+	background-color: white !important;
+}
+.navbar-right {
+	position: absolute;
+	right: 0;
+	padding-right: 20px;
+}
+.spacing {
+	margin-right: 20px;
+}
+.dashboard {
+	margin-top: 20px;
+	margin: auto;
+	text-align: center;
+	width: 50;
+}
+
+/*SEARCH RESTAURANTS*/
+/*SEARCH BAR*/
+.searchBackground {
+	background-color: #f3e8c7;
+	padding-top: 50px;
+	margin: auto;
+}
+.btn-outline-success {
+	border-color: #C0D5AD !important;
+}
+.searchButton{
+	background-color: #FDBFA8 !important;
+	border-color: #FDBFA8 !important;
+}
+.searchBox{
+	background-color: #F8F9FA !important;
+	margin: auto;
+	width: 60%;
+	border-color: #FDBFA8;
+	border-style: solid;
+	border-radius: 30px; 
+	border-width: 5px;
+	padding: 5% 10% 5% 10%;
+}
+.searchBar{
+	/*Centralize it*/
+	text-align: center;
+	margin: auto !important;
+	box-sizing: content-box !important;
+}
+.searchInput{
+	width: 75%;
+}
+.searchComponent {
+	display: inline-block !important;
+	border-radius: 5px; 
+}
+.filterDropdown{
+	margin: auto !important;
+	display: inline-block;
+}
+.observer {
+	display: inline-block;
+	text-align: center;
+}
+.observer-row {
+	margin: auto;
+	text-align: center;
+}
+
+/*RESTAURANTBOX*/
+.description {
+/*Restaurant info*/
+	display: block;
+	margin-top: 10px;
+}
+.column {
+/*Split into three columns*/
+	float: left;
+	width: 31%;
+  	height: auto;
+  	margin: 10px;
+}
+.card-header {
+/*Restaurant name*/
+	/*Responsive text size*/
+    font-size: 100%;
+	text-align: center;
+    overflow: hidden;
+	border-color: #FDBFA8 !important;
+	border-radius: 30px;
+}
+img.rounded {
+/*Image*/
+	margin-top: 15px;
+	width: auto;
+	height: 200px;
+	object-fit: cover;
+}
+.restaurantBody {
+	background-color: black !important;
+	padding: auto;
+}
+.yelp {
+	width: 80px;
+	height: 50px;
+	float: right;
+	margin-right: -7%;
+}
+.checked {
+  color: orange;
+}
+.box-button {
+	position: absolute;
+	padding: 0 0 0 0 !important;
+	border-color: transparent !important;
+	background-color: transparent !important; 
+	color: black !important;
+}
+.favorite_star {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.moreinfo {
+	background-color: #484848 !important;
+	border-color: #484848 !important;
+	float: right;
+}
+
+/*Individual Restaurant Page*/
+.jumbotron {
+	font-size: 4em;
+	background-color: #FDBFA8 !important;
+}
+.restaurantPage {
+	/*Pink: #FDBFA8*/
+	background-color: #FDBFA8 !important;
+	height: 100% !important;
+}
+.restaurantInfo {
+	margin: auto !important;
+	font-size: 1.4vw;
+	width: 50% !important;
+	margin-top: 10px;
+	padding-bottom: 100px;
+}
+.restaurantTitle {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 5vw;
+	display: block;
+}
+.hours_box {
+	margin: auto !important;
+	text-align: center !important;
+}
+
+/*RESPONSIVE DESIGN*/
+
+/*If screen size is 992px wide, or more, make the following changes*/
+/*>992 = desktop size*/
+@media screen and (min-width: 992px) {
+	/*Global Navbar*/
+	.navbar-brand{
+		visibility: hidden;
+	}
+	.navbar-nav{
+		position: absolute;
+		left: 0;
+		top: .8em;
+	}
+	div.container {
+		display: block;
+	}
+	img.rounded { 
+   		width: 100%;
+	}
+}
+
+/*If screen size is 992px wide, or less, make the following changes*/
+/*992px = tablet size*/
+@media screen and (max-width: 991px) {
+	/*Global Navbar*/
+	.navbar-brand{
+		color: white !important;
+	}
+	.logo {
+		width: 60px;
+		height: 50px;
+		display: inline-block;
+	}
+	.restaurantfinder {
+		display: inline-block;
+	}
+	.navbar-button {
+		display: block;
+		margin: 0;
+	}
+	/*Restaurant Box*/
+	.column {
+		width: 45%;
+	}
+	img.rounded {
+   		width: 100%;
+	}
+	/*Search Box*/
+	.filterDropdown {
+		margin: 10px !important;
+	}
+	.searchBox {
+		width: 80% !important;
+		margin: auto;
+	}
+	.searchInput {
+		width: 80% !important;
+	}
+	.restaurantTitle {
+		width: 75%;
+	}
+}
+
+/*If screen size is 768px wide, or less, make the following changes*/
+/*768px = mobile size*/
+@media screen and (max-width: 767px) {
+	/*Global Navbar*/
+	.navbar-brand{
+		color: white !important;
+	}
+	.logo {
+		width: 60px;
+		height: 50px;
+		display: inline-block;
+	}
+	.restaurantfinder {
+		display: inline-block;
+	}
+	.navbar-button {
+		display: block;
+		margin: 0;
+	}
+	/*Restaurant Box*/
+	.column {
+		width: 100%;
+	}
+	/*Search Box*/
+	.searchBox {
+		width: 100%;
+		margin: auto;
+		box-sizing: content-box !important;
+	}
+	.searchInput{
+		width: 70% !important;
+	}
+	.filterDropdown {
+		margin: 0px !important;
+	}
+	/*Individual Restaurants*/
+	.restaurantTitle {
+		width: 100% !important;
+	}
+}
+
+
+

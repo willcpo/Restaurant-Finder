@@ -1,0 +1,7 @@
+.nyc_output
+backend/.nyc_output
+frontend/.nyc_output
+node_modules
+.DS_Store
+backend/node_modules
+frontend/node_modules
